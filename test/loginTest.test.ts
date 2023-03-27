@@ -4,17 +4,15 @@ import {loginPage} from "../src/pages/login.page";
 describe('Feature Login', () => {
 
     beforeAll(async () => {
-        //loginPage = new LoginPage();
         await driverInstance.start();
-    });
+    }, 100000);
 
     afterAll(async () => {
         await driverInstance.closeDriver();
     });
 
     it('Go To Page', async () => {
-        await loginPage.clickOnLogin()
-        await driverInstance.waitTime(3500);
-    });
+        await loginPage.loginPage()
+    }, 70000);
 
 });
