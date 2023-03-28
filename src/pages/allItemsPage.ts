@@ -2,7 +2,7 @@ import {BasePage} from "./base.page";
 import { ElementActions } from "../core/element-actions";
 
 class AllItemsPage extends BasePage {
-    private searchResultLabel: string = ".page-title-wrapper";
+    private searchResultLabel: string = ".page";
 
     constructor() {
         super();
