@@ -23,4 +23,8 @@ export class ElementActions {
         await driverInstance.Page.waitForSelector(locator);
         return await driverInstance.Page.innerText(locator);
     }
+
+    static async moveToElement(locator: string): Promise<void> {
+        await driverInstance.Page.focus(locator);
+    }
 }
