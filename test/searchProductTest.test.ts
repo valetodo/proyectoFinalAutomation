@@ -1,7 +1,7 @@
 import {driverInstance} from "../src/core/driver";
 import {loginPage} from "../src/pages/login.page";
-import {navigatePage} from "../src/pages/navigationPage";
-import {allItemsPage} from "../src/pages/allItemsPage";
+import {navigatePage} from "../src/pages/navigation.page";
+import {allItemsPage} from "../src/pages/allItems.page";
 
 describe('Search a product', () => {
 
