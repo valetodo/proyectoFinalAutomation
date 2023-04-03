@@ -5,9 +5,10 @@ import { driverInstance } from "../../src/core/driver";
 import {headerPage} from "../../src/pages/components/header.page"
 import {loginPage} from "../../src/pages/login.page"
 
-Before({name: 'Before UI Hook', tags: '@ui-tests'},async function() {
-    console.log("inicio")
-    await driverInstance.start(TESTDATA.url);
+Before({name: 'Before UI Hook', tags: '@ui-tests'},async function(this: CustomWorld) {
+    const browser: string = ("browser" in this.parameters) ? this.parameters.browser : "chrome"
+    console.log()
+    await driverInstance.start(TESTDATA.url, browser);
 });
 
 Before({name: 'Before login Hook', tags: '@starLogin'}, async function() {
