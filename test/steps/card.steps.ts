@@ -29,3 +29,6 @@ When(/^Delete the product added$/, async function () {
 When(/^click on button OK for delete$/, async function () {
     await checkoutProduct.clickOnElement(checkoutProduct.popPupOkDeleteProduct)
 });
+Then(/^the product should not be in card menu$/, async function () {
+    await checkoutProduct.elementIsVisibleInPage(checkoutProduct.noItemsCard)
+});

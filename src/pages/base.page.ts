@@ -14,4 +14,8 @@ export class BasePage {
     async getNameElement(locator: string): Promise<string> {
         return await ElementActions.getElementText(locator);
     }
+
+    async elementIsVisibleInPage(locator: string): Promise<boolean> {
+        return ElementActions.getElementVisibleInPage(locator);
+    }
 }

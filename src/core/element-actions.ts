@@ -23,4 +23,10 @@ export class ElementActions {
         await driverInstance.Page.waitForSelector(locator);
         return await driverInstance.Page.innerText(locator);
     }
+
+    static async getElementVisibleInPage(locator: string): Promise<boolean> {
+        return await driverInstance.Page.isVisible(locator, {
+            timeout: 10000
+        });
+    }
 }

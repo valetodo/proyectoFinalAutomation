@@ -1,4 +1,4 @@
-Feature: Is it Friday yet?
+Feature: test product
   Everybody wants to know when it's Friday
 
   @starLogin @ui-tests @cart
