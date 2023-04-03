@@ -1,7 +1,10 @@
 module.exports = {
     default: {
         parallel: 2,
-        format: ['html:cucumber-report.html'],
+        format: [
+            'html:cucumber-report.html',
+            './reporter.ts',
+        ],
         paths: [
             './test/features/**/*.feature'
         ],
