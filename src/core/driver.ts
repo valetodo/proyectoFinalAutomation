@@ -15,7 +15,7 @@ export class Driver {
         this.browser = await browserInstance.launch(
         {
             //headless: false,
-            slowMo: 2000
+            slowMo: 3000
         }
         );
         this.context = await this.browser.newContext();
