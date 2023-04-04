@@ -1,6 +1,6 @@
  @starLogin @ui-tests @test2
 Feature: Test items
- 
+
 Scenario: navigate button
     Given I go to page items
     When this an action
